@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/additional-methods.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="flex-container">
+        <div class="flex-item" style="display: none;">
+        	<div class="form-container">
+        		<a href="javascript:void(0);" class="closeForm"></a>
+				<form id="form" method="post" action="#">
+					<div class="avatar">
+						<img src="img/avatar.png" alt="avatar">
+					</div>
+				    <!-- <label for="email">Email</label> -->
+				    <div class="icon_box emailIcon"></div>
+				    <input type="email" name="email" id="email" class="emailInput" placeholder="chavroka@gmail.com" required  />
+				    <!-- <label for="password">Password</label> -->
+				    <div class="icon_box passwordIcon"></div>
+				    <input type="password" name="password" id="password" class="passwordInput" required minlength="5" placeholder="**********"/>	
+				    <a href="javascript:void(0);" class="margin-0">Forgot your password?</a>	
+				    <div class="rememberMeBlock">
+				    	<img class="rememberMeIcon" src="img/tick.png" alt="tick">
+				    	<label class="switch">
+						  <input type="checkbox">
+						  <span class="slider round"></span>
+						</label>
+				    	<span>Remember?</span>
+				    	<button id="formSubmit" class="button formSubmitButton" type="submit" disabled>Sign in</button>
+				    </div>
+				</form>
+			</div>
+			<p class="sign-up">Not a registered user yet? <a href="javascript:void(0);">Sign up now!</a></p>
+		</div>
+		<button class="button openForm">open form</button>
+	</div>
+</body>
+</html>
